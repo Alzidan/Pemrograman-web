@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title></title>
   </head>
   <body>
 
@@ -27,19 +27,19 @@
     </nav>
   
     <div class="container">
-      <form action="" method="POST">
-      <h3 class="mt-5 text-center">PENDAFTARAN ONLINE</h3>
+      <form action="konfirmasipmb.php" method="POST">
+      <h3 class="mt-5 text-start">PENDAFTARAN ONLINE</h3>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-12">
           <label>Jalur penerimaan mahasiswa baru</label>
-          <select class="form-select">
+          <select class="form-select" name="jalur">
             <option selected>PIlih jalur penerimaan</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option value="T2 2022/2023 RATA RATA RAPOR">T2 2022/2023 RATA RATA RAPOR</option>
+            <option value="T2 2022/2023 UJIAN SARING MASUK">T2 2022/2023 UJIAN SARING MASUK</option>
+            <option value="T2 2022/2023 PERINGKAT KELAS">T2 2022/2023 PERINGKAT KELAS</option>
           </select>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-12">
           <label>Nama lengkap</label>
           <input name="name" placeholder="Nama lengkap" type="text" class="form-control">
         </div>
@@ -48,38 +48,38 @@
       <div class="row mt-3">
         <div class="col-md-6">
           <label>Tempat Tanggal lahir</label>
-          <input placeholder="TTL" type="text" class="form-control">
+          <input name="ttl" placeholder="TTL" type="text" class="form-control">
         </div>
         <div class="col-md-6">
           <label>Nomor Induk Kependudukan</label>
-          <input nik="Nik" placeholder="Nik" type="text" class="form-control">
+          <input name="Nik" placeholder="Nik" type="text" class="form-control">
         </div>
       </div>
       <!-- akhir row 2 -->
       <div class="row mt-3">
         <div class="col-md-4">
           <label>Jenis kelamin</label>
-          <select class="form-select">
-            <option selected>PIlih jenis kelamin</option>
+          <select class="form-select" name="jeniskelamin">
+            <option selected>Pilih jenis kelamin</option>
             <option value="1">Laki-Laki</option>
             <option value="2">Perempuan</option>
           </select>
         </div>
         <div class="col-md-4">
           <label>Agama</label>
-          <select class="form-select">
+          <select class="form-select" name="agama">
             <option selected>Pilih Agama</option>
-            <option value="1">Islam</option>
-            <option value="2">Kristen</option>
-            <option value="3">Hindu</option>
+            <option value="Islam">Islam</option>
+            <option value="Kristen">Kristen</option>
+            <option value="Hindu">Hindu</option>
           </select>
         </div>
         <div class="col-md-4">
           <label>Status</label>
           <select name="Status" class="form-select">
             <option selected>Pilih Status</option>
-            <option value="1">Belum Menikah</option>
-            <option value="2">Menikah</option>
+            <option value="Belum Menikah">Belum Menikah</option>
+            <option value="Menikah">Menikah</option>
           </select>
         </div>
       </div>    
@@ -87,46 +87,46 @@
       <div class="row mt-3">
         <div class="col-md-12">
           <label>Alamat</label>
-          <textarea placeholder="alamat" class="form-control"></textarea>
+          <textarea name="alamat" placeholder="alamat" class="form-control"></textarea>
         </div>
       </div>
       <!-- AKHIR DARI ROW 4 -->
       <div class="row mt-3">
-        <div class="col-md-4">
-          <label>Kode Pos</label>
-          <input placeholder="Kode Pos" type="text" class="form-control">
+        <div class="col-md-12">
+          <label>kodepos</label>
+          <input name="kodepos" placeholder="Kode Pos" type="text" class="form-control">
         </div>
-        <div class="col-md-4">
+        <div class="col-md-12">
           <label>Email</label>
           <input name="email" placeholder="Email" type="email" class="form-control">
         </div>
-        <div class="col-md-4">
-          <label>Nomor handphone</label>
-          <input name="nomor handphone" placeholder="Nomor handphone" type="text" class="form-control">
+        <div class="col-md-12">
+          <label>Nomor_handphone</label>
+          <input name="nomor_handphone" placeholder="Nomor handphone" type="text" class="form-control">
         </div>
       </div>
       <!-- AKHIR DARI ROW 5 -->
-      <h3 class="mt-5 text-center">DATA SEKOLAH ASAL CALON MAHASISWA</h3>
+      <h3 class="mt-5 text-start">DATA SEKOLAH ASAL CALON MAHASISWA</h3>
       <div class="row mt-3">
-        <div class="col-md-6">
-          <label>Asal Sekolah</label>
-          <input name="asal sekolah" placeholder="Asal Sekolah" type="text" class="form-control">
+        <div class="col-md-12">
+          <label>Asal_Sekolah</label>
+          <input name="asal_sekolah" placeholder="Asal Sekolah" type="text" class="form-control">
         </div>
-        <div class="col-md-6">
-          <label>Tahun Lulus</label>
-          <input name="Tahun Lulus" placeholder="Tahun Lulus" type="text" class="form-control">
+        <div class="col-md-12">
+          <label>Tahun_Lulus</label>
+          <input name="Tahun_Lulus" placeholder="Tahun Lulus" type="text" class="form-control">
         </div>
       </div>
       <!-- AKHIR DARI ROW 5 -->
-      <h3 class="mt-5 text-center">DATA ORANG TUA CALON MAHASISWA</h3>
+      <h3 class="mt-5 text-start">DATA ORANG TUA CALON MAHASISWA</h3>
       <div class="row mt-3">
-        <div class="col-md-6">
-          <label>Nama Ayah</label>
-          <input name="Nama Ayah" placeholder="Nama Ayah" type="text" class="form-control">
+        <div class="col-md-12">
+          <label>Nama_Ayah</label>
+          <input name="Nama_Ayah" placeholder="Nama Ayah" type="text" class="form-control">
         </div>
-        <div class="col-md-6">
-          <label>Nama Ibu</label>
-          <input name="Nama Ibu" placeholder="Nama Ibu" type="text" class="form-control">
+        <div class="col-md-12">
+          <label>Nama_Ibu</label>
+          <input name="Nama_Ibu" placeholder="Nama Ibu" type="text" class="form-control">
         </div>
       </div>
       <!-- akhir dari row 6 -->
@@ -138,52 +138,52 @@
       </div>
       <!-- akhir dari row 7 -->
       <div class="row mt-3">
-        <div class="col-md-6 mt-4 mb-2">
-          <label for="">Kode Pos <span class="text-danger">*</span></label>
-          <input type="text" class="form-control mt-2" name="kodeposortu" placeholder="Kode Pos">
+        <div class="col-md-12 mt-1 mb-2">
+          <label for="">kodepos</label>
+          <input name="kodepos" type="text" class="form-control mt-2" name="kodeposortu" placeholder="Kode Pos">
         </div>
-        <div class="col-md-6 mt-4 mb-2">
-          <label for="">Email <span class="text-danger">*</span></label>
-          <input type="email" class="form-control mt-2" name="emailortu" placeholder="email address">
+        <div class="col-md-12 mt-2 mb-2">
+          <label for="">Email</label>
+          <input type="email" class="form-control mt-2" name="emailortu" placeholder="Email">
         </div>
       </div>
       <!-- akhir dari row 8 -->
       <div class="row mt-4">
         <div class="col-md-6 mb-2">
-          <label for="">Pendidikan Terakhir Ayah <span class="text-danger">*</span></label>
+          <label for="">Pendidikan_Terakhir_Ayah</label>
           <select name="pendidikanterakhirayah" class="form-select mt-2">
             <option selected="">Pilih</option>
-            <option value="A - Tidak Tamat SD">A - Tidak Tamat SD</option>
-            <option value="B - Tamat SD">B - Tamat SD</option>
-            <option value="C - Tamat SMP">C - Tamat SMP</option>
-            <option value="D - Tamat SMA">D - Tamat SMA</option>
-            <option value="E - Diploma (D1/D2)">E - Diploma (D1/D2)</option>
-            <option value="F - Sarjana (D3)">F - Sarjana (D3)</option>
-            <option value="G - Sarjana (D4/S1)">G - Sarjana (D4/S1)</option>
-            <option value="H - Pascasarjana (S2)">H - Pascasarjana (S2)</option>
-            <option value="I - Doktoral (S3)">I - Doktoral (S3)</option>
+            <option value="tidak tamat">A - Tidak Tamat SD</option>
+            <option value="Tamat SD"  >B - Tamat SD</option>
+            <option value="Tamat SMP" >C - Tamat SMP</option>
+            <option value="Tamat SMA" >D - Tamat SMA</option>
+            <option value="Diploma  " >E - Diploma (D1/D2)</option>
+            <option value="Sarjana   ">F - Sarjana (D3)</option>
+            <option value="Sarjana      ">G - Sarjana (D4/S1)</option>
+            <option value="Pascasarjana ">H - Pascasarjana (S2)</option>
+            <option value="Doktoral     ">I - Doktoral (S3)</option>
           </select>
         </div>
         <div class="col-md-6 mb-2">
-          <label for="">Pendidikan Terakhir Ibu <span class="text-danger">*</span></label>
+          <label for="">Pendidikan_Terakhir_Ibu</label>
           <select name="pendidikanterakhiribu" class="form-select mt-2">
             <option selected="">Pilih</option>
-            <option value="A - Tidak Tamat SD">A - Tidak Tamat SD</option>
-            <option value="B - Tamat SD">B - Tamat SD</option>
-            <option value="C - Tamat SMP">C - Tamat SMP</option>
-            <option value="D - Tamat SMA">D - Tamat SMA</option>
-            <option value="E - Diploma (D1/D2)">E - Diploma (D1/D2)</option>
-            <option value="F - Sarjana (D3)">F - Sarjana (D3)</option>
-            <option value="G - Sarjana (D4/S1)">G - Sarjana (D4/S1)</option>
-            <option value="H - Pascasarjana (S2)">H - Pascasarjana (S2)</option>
-            <option value="I - Doktoral (S3)">I - Doktoral (S3)</option>
+            <option value="Tidak Tamat" >A - Tidak Tamat SD</option>
+            <option value="Tamat SD"    >B - Tamat SD</option>
+            <option value="Tamat SMP"   >C - Tamat SMP</option>
+            <option value="Tamat SMA"   >D - Tamat SMA</option>
+            <option value="Diploma"     >E - Diploma (D1/D2)</option>
+            <option value="Sarjana"     >F - Sarjana (D3)</option>
+            <option value="Sarjana"     >G - Sarjana (D4/S1)</option>
+            <option value="Pascasarjana">H - Pascasarjana (S2)</option>
+            <option value="Doktoral"    >I - Doktoral (S3)</option>
           </select>
         </div>
       </div>
       <!-- akhir dari row 9 -->
       <div class="row mt-4">
         <div class="col-md-6 mb-2">
-          <label for="">Status Ayah <span class="text-danger">*</span></label>
+          <label for="">StatusAyah</label>
           <select name="statusayah" class="form-select mt-2">
             <option selected>Pilih</option>
             <option value="Belum Menikah">Belum Menikah</option>
@@ -191,7 +191,7 @@
         </select>
         </div>
         <div class="col-md-6 mb-2">
-          <label for="">Status Ibu <span class="text-danger">*</span></label>
+          <label for="">StatusIbu</label>
           <select name="statusibu" class="form-select mt-2">
             <option selected>Pilih</option>
             <option value="Belum Menikah">Belum Menikah</option>
@@ -202,20 +202,20 @@
 
       <div class="row mt-4">
         <div class="col-md-6 mb-2">
-          <label for="">Pekerjaan Ayah <span class="text-danger">*</span></label>
+          <label for="">PekerjaanAyah</label>
           <input type="text" name="pekerjaanayah" class="form-control mt-2" placeholder="pekerjaan ayah">
         </div>
         <div class="col-md-6 mb-2">
-          <label for="">Pekerjaan Ibu <span class="text-danger">*</span></label>
+          <label for="">PekerjaanIbu</label>
           <input type="text" name="pekerjaanibu" class="form-control mt-2" placeholder="pekerjaan ibu">
         </div>
       </div>
 
-      <h3 class="mt-5 border-bottom border-2 pb-3 text-center">Peminatan Program Studi</h3>
+      <h3 class="mt-5 border-bottom border-2 pb-3 text-start">Peminatan Program Studi</h3>
 
       <div class="row mt-4">
-        <div class="col-md-6 mb-2">
-          <label for="">Pilihan Program Studi 1 <span class="text-danger">*</span></label>
+        <div class="col-md-12 mb-2">
+          <label for="">PilihanProgramStudi1</label>
           <select name="prodi1" class="form-select mt-2">
             <option selected>Pilih</option>
             <option value="Informatika">Informatika</option>
@@ -230,8 +230,8 @@
             <option value="Psikologi">Psikologi</option>
         </select>
         </div>
-        <div class="col-md-6 mb-2">
-          <label for="">Pilihan Program Studi 2 <span class="text-danger">*</span></label>
+        <div class="col-md-12 mb-2">
+          <label for="">PilihanProgramStudi2</label>
           <select name="prodi2" class="form-select mt-2">
             <option selected>Pilih</option>
             <option value="Informatika">Informatika</option>
@@ -247,7 +247,7 @@
         </select>
         </div>
         <div class="col-12 mt-3 mb-2">
-          <label for="">Sumber Informasi</label>
+          <label for="">SumberInformasi</label>
           <div class="form-check form-check-inline mt-2">
             <select name="info" id="" class="form-select mt-2">
               <option selected>Pilih Sumber</option>
@@ -269,20 +269,20 @@
 
       <div class="row mt-4">
         <div class="col-12 mb-2">
-          <label for="">Pilihan Gelombang <span class="text-danger">*</span></label>
+          <label for="">PilihanGelombang</label>
           <select name="gelombang" class="form-select mt-2">
             <option selected>Pilih</option>
-            <option value="Gelombang a">Gelombang 1</option>
-            <option value="Gelombang b">Gelombang 2</option>
-            <option value="Gelombang c">Gelombang 3</option>
-            <option value="Gelombang d">Gelombang 4</option>
+            <option value="Gelombang 1">Gelombang 1</option>
+            <option value="Gelombang 2">Gelombang 2</option>
+            <option value="Gelombang 3">Gelombang 3</option>
+            <option value="Gelombang 4">Gelombang 4</option>
         </select>
         </div>
       </div>
 
       <div class="row mt-3">
         <div class="col-12 d-flex justify-content-center">
-          <button class="btn-outline-dark">Submit</button>
+          <button class="btn-outline-dark" name="tombol">Submit</button>
         </div>
       </div>
     <!-- AKHIR DARI CONTAINER JANGAN DIPINDAHIN -->  
